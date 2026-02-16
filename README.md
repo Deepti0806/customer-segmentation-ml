@@ -20,3 +20,14 @@
 2. Install dependencies:
    pip install -r requirements.txt
 3. Run the notebook in Jupyter
+
+## Streamlit Dashboard
+
+An interactive dashboard was developed using Streamlit to visualize:
+
+- Customer cluster distribution
+- Segment-wise mean values
+- Interactive data exploration
+
+### Dashboard Preview
+![Dashboard](images/dashboard.png)
