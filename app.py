@@ -51,3 +51,18 @@ sns.scatterplot(
 
 plt.title("Customer Segments")
 st.pyplot(fig)
+
+st.subheader("Business Insights")
+
+st.markdown("""
+- Cluster 0: High income, high spending — Premium customers.
+- Cluster 1: Low income, low spending — Budget customers.
+- Cluster 2: High income, low spending — Conservative spenders.
+- Cluster 3: Low income, high spending — Impulsive buyers.
+- Cluster 4: Moderate income and spending — Average customers.
+""")
+
+st.subheader("Cluster Distribution")
+
+cluster_counts = df["Cluster"].value_counts().sort_index()
+st.bar_chart(cluster_counts)
